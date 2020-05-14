@@ -7,11 +7,12 @@ import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    int x = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        x=1000;
     }
 
     @Override
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("onStart");
         //Log.d("mesaj","started");
         super.onStart();
+        x=1002;
     }
 
     @Override
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("onStop");
         //Log.d("mesaj","stopped");
         super.onStop();
+        x=1003;
     }
 
     @Override
